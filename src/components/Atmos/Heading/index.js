@@ -23,7 +23,7 @@ Heading.propTypes = {
   level: PropTypes.number,
   palette: PropTypes.string,
   weight: PropTypes.number,
-  children: PropTypes.node,
+  children: PropTypes.string,
 };
 
 Heading.defaultProps = {

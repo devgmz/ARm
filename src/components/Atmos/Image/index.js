@@ -1,20 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import { PropTypes } from 'prop-types';
 
-import antman from '../../../image/antman.jpg';
-
-const StyledImage = styled.img.attrs( {
-  src: antman
-})`
+const StyledImage = styled.img`
+  background: url(${props => props.image});
   width: 100%;
   height: 100%;
   object-fit: cover;
 `;
 
-const Image = ({ ...props }) => {
+const Image = ({ image }) => {
   return (
-    <StyledImage />
+    <StyledImage image={image} />
   )
+}
+
+Image.propTypes = {
+  image: PropTypes.string,
 }
 
 export default Image

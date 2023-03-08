@@ -22,9 +22,9 @@ const styles = css`
 
 const StyledButton = styled.button`${styles}`;
 
-const Button = ( {type, ...props } ) => {
+const Button = ( {type, event, ...props } ) => {
   return (
-    <StyledButton type={type} {...props} />
+    <StyledButton type={type} onClick={event} {...props} />
   )
 }
 
@@ -33,6 +33,7 @@ Button.propTypes = {
   palette: PropTypes.string,
   height: PropTypes.number,
   width: PropTypes.number,
+  event: PropTypes.func,
 }
 
 Button.defaultProps = {

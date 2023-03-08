@@ -10,15 +10,16 @@ const StyledInput = styled.input`
   line-height: 40px;
   color: black;
 `
-const Input = ({ type, ...props}) => {
+const Input = ({ type, event, ...props}) => {
   return (
-    <StyledInput {...props} />
+    <StyledInput {...props} onChange={event} />
   )
 }
 
 Input.propsTypes = {
   type: PropTypes.string,
   height: PropTypes.number,
+  event: PropTypes.func,
 }
 
 Input.defaultProps = {

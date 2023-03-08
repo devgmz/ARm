@@ -3,16 +3,17 @@ import styled from 'styled-components'
 
 import Heading from '../../Atmos/Heading';
 import Image from '../../Atmos/Image';
+import { PropTypes } from 'prop-types';
 
 const Wrapper = styled.div`
-  height: 500px;
   display: flex;
   flex-direction: column;
+  height: 500px;
+  width: 400px;
 `
 
 const ImageWrapper = styled.div`
   height: 500px;
-  width: 100%;
 
   & > img {
     background-size: 100% 100%;
@@ -20,7 +21,6 @@ const ImageWrapper = styled.div`
 `
 
 const InfoWrapper = styled.div`
-  width: 100%;
   text-align: center;
 `
 
@@ -35,6 +35,11 @@ const Card = ({ movieName, image }) => {
       </InfoWrapper>
     </Wrapper>
   )
+}
+
+Card.propTypes = {
+  movieName: PropTypes.string,
+  image: PropTypes.string,
 }
 
 export default Card
