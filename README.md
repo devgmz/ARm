@@ -42,4 +42,4 @@
 
 [Kakao FE, 아토믹 디자인을 활용한 디자인 시스템 도입기](https://fe-developers.kakaoent.com/2022/220505-how-page-part-use-atomic-design-system/)
 
-[요즘IT, Atomic Design Pattern의 Best Practice 여정기](https://yozm.wishket.com/magazine/detail/1531/)
+[teo, Atomic Design Pattern의 Best Practice 여정기](https://velog.io/@teo/Atomic-Design-Pattern)
