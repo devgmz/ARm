@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 import Navigation from '../../Molecules/Navigation'
 import IconLink from './../../Molecules/IconLink/index';
-import Search from './../../Molecules/Search/index';
 
 const HeaderWrapper = styled.header`
   padding: 0 20px;
